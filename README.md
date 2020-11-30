@@ -9,8 +9,6 @@ Currently the wrapper supports the following uncertainty estimation methods for 
 * Variational inference with inducing weights: each of the layer is augmented with a small matrix of inducing weights, then MFVI is performed in the inducing weight space.
 * Ensemble in inducing weight space: same augmentation as above, but with ensembles in the inducing weight space.
 
-Details of the latter two approaches can be found at [Sparse Uncertainty Representation in Deep Learning with Inducing Weights](https://openreview.net/forum?id=M9hdyCNlWaf])
-
 ## Usage
 
 The main workhorse of our library is the `bayesianize_` function.
