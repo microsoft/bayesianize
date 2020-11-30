@@ -1,0 +1,8 @@
+numpy>=1.19.2
+torch>=1.7.0
+torchvision>=0.8.1
+scipy>=1.5.2
+tqdm>=4.50.2
+matplotlib>=3.3.2
+seaborn>=0.11.0
+pytest>=6.1.1

@@ -1,0 +1,22 @@
+{
+	"inference": {
+		"Conv2d": {
+			"inference": "inducing",
+		       	"inducing_rows": 128,
+			"inducing_cols": 128
+		}, "Linear": {
+			"inference": "inducing",
+		       	"inducing_rows": 100,
+			"inducing_cols": 128
+		}
+	},
+       	"whitened_u": true,
+       	"q_inducing": "diagonal",
+       	"learn_lamda": true,
+       	"init_lamda": 0.001,
+       	"max_lamda": 0.03,
+        "max_sd_u": 0.1,
+       	"cache_cholesky": true,
+       	"prior_sd": 1.0,
+       	"sqrt_width_scaling": true
+}
