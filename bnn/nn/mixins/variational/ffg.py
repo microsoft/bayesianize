@@ -99,13 +99,13 @@ class FFGMixin(VariationalMixin):
     @property
     def weight_sd(self):
         weight_sd = F.softplus(self._weight_sd)
-        return weight_sd if self.max_sd is None else weight_sd.clamp(0, self.max_sd)
+        return weight_sd.clamp(1e-5, self.max_sd) 
 
     @property
     def bias_sd(self):
         if self.has_bias:
             bias_sd = F.softplus(self._bias_sd)
-            return bias_sd if self.max_sd is None else bias_sd.clamp(0, self.max_sd)
+            return bias_sd.clamp(1e-5, self.max_sd) 
         return None
 
     @property
